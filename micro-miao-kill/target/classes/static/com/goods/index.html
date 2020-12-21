@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title>淘军火，我喜欢</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css"><!--引入bootstrap的css样式库-->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script><!--引入jQuery-->
+    <!--bootstrap是基于jQuery库的，所以应该先导入jQuery-->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script><!--引入bootstrap-->
+    <link rel="icon" href="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2593667755,2901036670&fm=26&gp=0.jpg" type="ma/x-icon">
+    <script>
+        function SetIFrameHeight(){
+            var iframeid=document.getElementById("iframe"); //iframe id
+            if (document.getElementById){
+                iframeid.height =document.documentElement.clientHeight;
+            }
+        }
+        function logiii() {
+            $.get("../users/login1",{name:$("#name").val(),password:$("#password").val()},function (data) {
+                console.log(data)
+                if (data==null||data.myif==null){
+                    meg("密码错误")
+                }else{
+                    $(".hidewhenlogin").hide()
+                    $(".showwhenlogin").show()
+                    $("#myname").html("用户："+data.myif.name)
+                    $(".headimg").attr("src",data.myif.headurl)
+                    $("#mymoney").append("余额：<a href='' style='text-decoration: none;color: rgb(0,126,198)'>"+data.myif.money+"</a>元")
+                    meg("欢迎进入淘军火！")
+                }
+            },"json")
+        }
+        var emmmm =setInterval(exame(),300000);
+        function exame() {
+            $.get("../users/exame",{},function (data) {
+                console.log(data)
+                if (data.myif!=null){
+                    $(".hidewhenlogin").hide()
+                    $(".showwhenlogin").show()
+                    $("#myname").html("用户："+data.myif.name)
+                    $("#mymoney").append("余额：<a href='' style='text-decoration: none;color: rgba(25,169,255,0.71)'>"+data.myif.money+"</a>元")
+                    $(".headimg").attr("src",data.myif.headurl)
+                    console.log("当前在线")
+                }else{
+                    console.log("没人")
+                    $(".hidewhenlogin").show()
+                    $(".showwhenlogin").hide()
+                }
+            },"json")
+        }
+        if (self.location != top.location) {
+            top.location = "index.html";
+        }
+        function changeif() {
+            var info = $("#info").val();
+            if (info!=""){
+                $("#ahref").attr("href","page?info="+ $("#info").val()+"&i=1")
+            }else{
+                $("#info").val("搜坦克有惊喜呀")
+            }
+        }
+        // meg("傻逼")
+        //弹窗提示
+        function meg(message) {
+            $("#alertyou").show(70);
+            $("#mesg").html(message);
+        }
+        function diape() {
+            $("#alertyou").hide(70)
+        }
+        // $(function () {
+        //     $("page")
+        // })
+    </script>
+    <link rel="stylesheet" href="../../css/iframe.css">
+</head>
+<body style="width: 100%;height: 100%">
+    <div>
+    <header>
+        <div class="header">
+            <input class="form-control" type="text" value="" style="position: absolute;background: none;width: 460px;float: left;left: 0.7%;top: 8px;" placeholder="试试搜索:坦克" id="info" onblur="changeif()">
+            <a class="form-control" style="position:absolute;left:470px;width: 60px;top: 8px;background-color: rgba(0,163,250,0.48);margin-left:1%;float: left;text-decoration: none;cursor: pointer" type="button" target="iframe" id="ahref" >搜索</a>
+            <li class="dropdown user user-menu" style="list-style: none">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="position: absolute;right: 20px;height: 130px;width: 80px;background-color: rgba(255,255,255,0)">
+                    <img class="headimg" src="../../img/未标题-1.png" class="img-circle"
+                         alt="User Image">
+                </a>
+                <ul class="dropdown-menu"><!-- User image -->
+                    <li class="user-header">
+                        <img class="headimg" src="../../img/未标题-1.png"
+                             style="position:absolute;width: 160px;height: 160px;left: 70px;border: 3px solid rgba(60,31,193,0.71)"
+                             alt="图片去叙利亚打暑假工了">
+                    </li>
+                    <li style="position: absolute;top:166px;width:100%;font-size: 28px;font-weight:600;color:rgba(115,0,23,0.91);font-family:YouYuan;text-align: center" id="myname">
+                         未登录
+                    </li>
+                    <li class="hidewhenlogin" class="logggg" style="position: absolute;top:206px;">
+                        <div class="pull-left">
+                            <form >
+                                <input class="form-control" style="width: 130%;margin:2% 10%" type="text" id="name">
+                                <input class="form-control" style="width: 130%;margin:2% 10%" type="password"
+                                       id="password">
+                                <input class="btn btn-default" style="width: 90%;margin:2% 30%" type="submit"
+                                       onclick="logiii()" value="登录">
+                            </form>
+                        </div>
+                    </li>
+                    <li class="regis hidewhenlogin" style="position: absolute;top:330px;">
+                        <a href="register.html" style="color:rgba(23,1,62,0.47)">害没有账号？去注册呀</a>
+                    </li><!-- Menu Footer-->
+                    <li class="user-footer showwhenlogin" style="position: absolute;top:206px;padding: 1%;display: none">
+                        <div class="pull-left" style="text-align: center;font-size: 26px;font-family: YouYuan;padding-left: 30px" id="mymoney">
+                        </div>
+                        <div class="pull-left" style="padding: 1%">
+                            <form action="upload" method="post" enctype="multipart/form-data">
+                                <input class="btn btn-default"
+                                       style="width: 75%;height:40px;margin-right:1%;float: left"
+                                       type="file" name="head_img">
+                                <input class="btn btn-default" style="width: 24%;height:40px;float: left" type="submit"
+                                       onclick="meg(location.reload())" value="换头像">
+                            </form>
+                        </div>
+                        <div class="pull-left">
+                            <button type="button" class="btn btn-default" title="修改自己信息" data-toggle="modal"
+                                    data-target="#editModal" onclick="alterM()"><i class="fa fa-file-o"></i>修改我的信息
+                            </button>
+                        </div>
+                        <div class="pull-right">
+                            <a href="../users/lgout" class="btn btn-default btn-flat">注销</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </header>
+    <aside>
+        <div class="asideindesx">
+
+        </div>
+    </aside>
+
+    <div class="content-wrapper">
+        <iframe width="100%" id="iframe" name="iframe" onload="SetIFrameHeight()"
+                frameborder="0" src="page?info=&i=1"></iframe>
+    </div>
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+
+        </div>
+        <strong>¿¿ 🐟 🐅 🦁 🐕 🐱 🐂 🐏 🐖 🐱 🗡 🔪 👍 🙅‍ 👌 ＞﹏＜ 👴 👶 🕊 🐎 🤮 🐇 🐱 &copy; 2014-2022.</strong> All rights reserved.
+    </footer>
+    </div>
+<div style="display: none;position: absolute;top: 40px;width: 100%" id="alertyou" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" >
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 id="mesg"></h3>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true" onclick="diape()">我知道了</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+
+
+    // var info=""
+    // $(function () {
+    //     on_on(1)
+    // })
+    // function on_on(i) {
+    //     $.get("getGoods",{"info":info,"i":i},function (data) {
+    //         console.log(data)
+    //         $("#datalist").html("")
+    //         $.each(data.goods,function (i,e) {
+    //             $("#datalist").append(" <li>" +
+    //                 "<img src='"+e.goodsimg+"' style='border-radius: 6px;width: 98%;height: 72%;float: left;margin: 1% 1%;position: relative;'>" +
+    //                 "<div style='border-radius: 6px;text-align: center;background-color: rgba(26,255,0,0.09);width: 80%;height: 10%;float: left;margin: 0 10%;position: relative;'>品名：<a href='#' style='text-decoration: none;color: rgba(20,23,207,0.83);height: 100%;font-weight: 660'>"+e.goodsname+"</a></div>\n" +
+    //                 "<div style='border-radius: 6px; text-align: center;background-color: rgba(208,209,212,0.18);width: 98%;height: 12%;float: left;margin: 1%;position: relative;'>" +
+    //                 "<a href='#' style='text-decoration: none;color: rgba(203,24,24,0.82);line-height: 200%'>"+e.goodscontent+"</a>" +
+    //                 " 单价：<a href='#' style='text-decoration: none;color: rgb(255,1,1);font-weight: 660'>"+e.goodsprice+"</a>" +
+    //                 " 库存：<a href='#' style='text-decoration: none;font-weight: 400;color: "+(e.goodsstock<100?"red":"green")+"'>"+e.goodsstock+"</a></div>\n" +
+    //                 "        </li>")
+    //         })
+    //     },"json")
+    // }
+
+
+</script>
+</html>

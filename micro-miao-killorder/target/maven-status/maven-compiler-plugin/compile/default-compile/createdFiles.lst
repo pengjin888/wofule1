@@ -1,0 +1,10 @@
+com\KillOrderApp.class
+com\dao\OrderinfoMapper.class
+com\model\Orderinfo.class
+com\dao\KillorderinfoMapper.class
+com\service\RabbitOredrConsumer.class
+com\model\XmlUtilclass.class
+com\util\MapperConfig.class
+com\model\Killgoods.class
+com\model\Killorderinfo.class
+com\feign\KillGoodsFeign.class

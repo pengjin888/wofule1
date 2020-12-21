@@ -1,0 +1,13 @@
+server:
+  port: 9982
+spring:
+  application:
+    name: micro-miao-eureka
+
+eureka:
+  client:
+    registerWithEureka: false #不注册
+    fetchRegistry: false #不检索
+    service-url:
+      defaultZone: http://localhost:9007/eureka
+#eureka

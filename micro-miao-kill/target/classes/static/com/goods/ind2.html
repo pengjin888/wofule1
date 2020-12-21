@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>毛子军火网</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css"><!--引入bootstrap的css样式库-->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script><!--引入jQuery-->
+    <!--bootstrap是基于jQuery库的，所以应该先导入jQuery-->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script><!--引入bootstrap-->
+</head>
+<script type="text/javascript">
+    function SetIFrameHeight(){
+        var iframeid=document.getElementById("iframe"); //iframe id
+        if (document.getElementById){
+            iframeid.height =document.documentElement.clientHeight;
+        }
+    }
+
+</script>
+<body>
+<div>
+    <header>
+        <div class="header">
+
+        </div>
+    </header>
+    <aside>
+        <div class="asideindesx">
+
+        </div>
+    </aside>
+    <div class="content-wrapper">
+        <iframe width="100%" id="iframe" name="iframe"	onload="SetIFrameHeight()"
+                frameborder="0" src="../../../templates/home.html"></iframe>
+    </div>
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+
+        </div>
+        <strong>¿¿ 🐟 🐅 🦁 🐕 🐱 🐂 🐏 🐖 🐱 🗡 🔪 👍 🙅‍ 👌 ＞﹏＜ 👴 👶 🕊 🐎 🤮 🐇 🐱 &copy; 2014-2022.</strong> All rights reserved.
+    </footer>
+</div>
+<div style="display: none;margin-top:50px" id="alertyou" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" >
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 id="mesg"></h3>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" data-dismiss="modal" aria-hidden="true" onclick="diape()">我知道了</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

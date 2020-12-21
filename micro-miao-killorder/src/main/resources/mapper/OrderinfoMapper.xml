@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.OrderinfoMapper" >
+  <resultMap id="BaseResultMap" type="com.model.Orderinfo" >
+    <id column="orderid" property="orderid" jdbcType="INTEGER" />
+    <result column="userid" property="userid" jdbcType="INTEGER" />
+    <result column="goodsid" property="goodsid" jdbcType="INTEGER" />
+    <result column="goodsname" property="goodsname" jdbcType="VARCHAR" />
+    <result column="goodscount" property="goodscount" jdbcType="INTEGER" />
+    <result column="goodsprice" property="goodsprice" jdbcType="INTEGER" />
+    <result column="orderstatus" property="orderstatus" jdbcType="INTEGER" />
+    <result column="createdate" property="createdate" jdbcType="TIMESTAMP" />
+    <result column="paydate" property="paydate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    orderid, userid, goodsid, goodsname, goodscount, goodsprice, orderstatus, createdate, 
+    paydate
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from orderinfo
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from orderinfo
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.model.Orderinfo" >
+    insert into orderinfo (orderid, userid, goodsid, 
+      goodsname, goodscount, goodsprice, 
+      orderstatus, createdate, paydate
+      )
+    values (#{orderid,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, #{goodsid,jdbcType=INTEGER}, 
+      #{goodsname,jdbcType=VARCHAR}, #{goodscount,jdbcType=INTEGER}, #{goodsprice,jdbcType=INTEGER}, 
+      #{orderstatus,jdbcType=INTEGER}, #{createdate,jdbcType=TIMESTAMP}, #{paydate,jdbcType=TIMESTAMP}
+      )
+    <selectKey keyProperty="orderid" order="AFTER" resultType="int">
+      select LAST_INSERT_ID();
+    </selectKey>
+  </insert>
+  <insert id="insertSelective" parameterType="com.model.Orderinfo" >
+    insert into orderinfo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="orderid != null" >
+        orderid,
+      </if>
+      <if test="userid != null" >
+        userid,
+      </if>
+      <if test="goodsid != null" >
+        goodsid,
+      </if>
+      <if test="goodsname != null" >
+        goodsname,
+      </if>
+      <if test="goodscount != null" >
+        goodscount,
+      </if>
+      <if test="goodsprice != null" >
+        goodsprice,
+      </if>
+      <if test="orderstatus != null" >
+        orderstatus,
+      </if>
+      <if test="createdate != null" >
+        createdate,
+      </if>
+      <if test="paydate != null" >
+        paydate,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="orderid != null" >
+        #{orderid,jdbcType=INTEGER},
+      </if>
+      <if test="userid != null" >
+        #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="goodsid != null" >
+        #{goodsid,jdbcType=INTEGER},
+      </if>
+      <if test="goodsname != null" >
+        #{goodsname,jdbcType=VARCHAR},
+      </if>
+      <if test="goodscount != null" >
+        #{goodscount,jdbcType=INTEGER},
+      </if>
+      <if test="goodsprice != null" >
+        #{goodsprice,jdbcType=INTEGER},
+      </if>
+      <if test="orderstatus != null" >
+        #{orderstatus,jdbcType=INTEGER},
+      </if>
+      <if test="createdate != null" >
+        #{createdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="paydate != null" >
+        #{paydate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+    <selectKey keyProperty="orderid" order="AFTER" resultType="int">
+      select LAST_INSERT_ID();
+    </selectKey>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.model.Orderinfo" >
+    update orderinfo
+    <set >
+      <if test="userid != null" >
+        userid = #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="goodsid != null" >
+        goodsid = #{goodsid,jdbcType=INTEGER},
+      </if>
+      <if test="goodsname != null" >
+        goodsname = #{goodsname,jdbcType=VARCHAR},
+      </if>
+      <if test="goodscount != null" >
+        goodscount = #{goodscount,jdbcType=INTEGER},
+      </if>
+      <if test="goodsprice != null" >
+        goodsprice = #{goodsprice,jdbcType=INTEGER},
+      </if>
+      <if test="orderstatus != null" >
+        orderstatus = #{orderstatus,jdbcType=INTEGER},
+      </if>
+      <if test="createdate != null" >
+        createdate = #{createdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="paydate != null" >
+        paydate = #{paydate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.model.Orderinfo" >
+    update orderinfo
+    set userid = #{userid,jdbcType=INTEGER},
+      goodsid = #{goodsid,jdbcType=INTEGER},
+      goodsname = #{goodsname,jdbcType=VARCHAR},
+      goodscount = #{goodscount,jdbcType=INTEGER},
+      goodsprice = #{goodsprice,jdbcType=INTEGER},
+      orderstatus = #{orderstatus,jdbcType=INTEGER},
+      createdate = #{createdate,jdbcType=TIMESTAMP},
+      paydate = #{paydate,jdbcType=TIMESTAMP}
+    where orderid = #{orderid,jdbcType=INTEGER}
+  </update>
+</mapper>

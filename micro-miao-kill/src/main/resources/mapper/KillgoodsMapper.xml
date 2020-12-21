@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.KillgoodsMapper" >
+  <resultMap id="BaseResultMap" type="com.model.Killgoods" >
+    <id column="killid" property="killid" jdbcType="INTEGER" />
+    <result column="goodsid" property="goodsid" jdbcType="INTEGER" />
+    <result column="stockcount" property="stockcount" jdbcType="INTEGER" />
+    <result column="startdate" property="startdate" jdbcType="TIMESTAMP" />
+    <result column="enddate" property="enddate" jdbcType="TIMESTAMP" />
+    <result column="killprice" property="killprice" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    killid, goodsid, stockcount, startdate, enddate, killprice
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from killgoods
+    where killid = #{killid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from killgoods
+    where killid = #{killid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.model.Killgoods" >
+    insert into killgoods (killid, goodsid, stockcount, 
+      startdate, enddate, killprice
+      )
+    values (#{killid,jdbcType=INTEGER}, #{goodsid,jdbcType=INTEGER}, #{stockcount,jdbcType=INTEGER}, 
+      #{startdate,jdbcType=TIMESTAMP}, #{enddate,jdbcType=TIMESTAMP}, #{killprice,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.model.Killgoods" >
+    insert into killgoods
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="killid != null" >
+        killid,
+      </if>
+      <if test="goodsid != null" >
+        goodsid,
+      </if>
+      <if test="stockcount != null" >
+        stockcount,
+      </if>
+      <if test="startdate != null" >
+        startdate,
+      </if>
+      <if test="enddate != null" >
+        enddate,
+      </if>
+      <if test="killprice != null" >
+        killprice,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="killid != null" >
+        #{killid,jdbcType=INTEGER},
+      </if>
+      <if test="goodsid != null" >
+        #{goodsid,jdbcType=INTEGER},
+      </if>
+      <if test="stockcount != null" >
+        #{stockcount,jdbcType=INTEGER},
+      </if>
+      <if test="startdate != null" >
+        #{startdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="enddate != null" >
+        #{enddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="killprice != null" >
+        #{killprice,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.model.Killgoods" >
+    update killgoods
+    <set >
+      <if test="goodsid != null" >
+        goodsid = #{goodsid,jdbcType=INTEGER},
+      </if>
+      <if test="stockcount != null" >
+        stockcount = #{stockcount,jdbcType=INTEGER},
+      </if>
+      <if test="startdate != null" >
+        startdate = #{startdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="enddate != null" >
+        enddate = #{enddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="killprice != null" >
+        killprice = #{killprice,jdbcType=INTEGER},
+      </if>
+    </set>
+    where killid = #{killid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.model.Killgoods" >
+    update killgoods
+    set goodsid = #{goodsid,jdbcType=INTEGER},
+      stockcount = #{stockcount,jdbcType=INTEGER},
+      startdate = #{startdate,jdbcType=TIMESTAMP},
+      enddate = #{enddate,jdbcType=TIMESTAMP},
+      killprice = #{killprice,jdbcType=INTEGER}
+    where killid = #{killid,jdbcType=INTEGER}
+  </update>
+  <select id="getKillgoods" parameterType="com.model.XmlUtilclass" resultType="com.model.Killgoods">
+    select ggs.killid,ggs.goodsid,ggs.stockcount,ggs.startdate,ggs.enddate,ggs.killprice,ggs.goodsname,ggs.goodsimg,ggs.goodsprice from (
+    select kg.killid,kg.goodsid,kg.stockcount,kg.startdate,kg.enddate,kg.killprice,g.goodsname,g.goodsimg,g.goodsprice from goods g,killgoods kg
+    <where>
+      g.goodsid = kg.goodsid
+        and  <![CDATA[ kg.startdate>#{startdate} ]]>
+        and <![CDATA[ kg.enddate<#{enddate}]]>
+    </where>
+    ) ggs
+    <where>
+      hour(startdate) =#{starthour} and hour (enddate) =#{endhour}
+    </where>
+  </select>
+  <update id="subnums" parameterType="int" >
+      update killgoods set stockcount=stockcount-1 where goodsid=#{goodsid} and stockcount>0
+  </update>
+  <update id="upstock" parameterType="int" >
+      update killgoods set stockcount=stockcount+1 where goodsid=#{goodsid} and stockcount>0
+  </update>
+</mapper>

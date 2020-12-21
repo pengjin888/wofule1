@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="micro-miao-kill" />
+        <module name="micro-eureka9001" />
+        <module name="micro-miao-killorder" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="micro-eureka9001" target="1.8" />
+      <module name="micro-miao-eureka2" target="1.8" />
+      <module name="micro-miao-kill" target="1.8" />
+      <module name="micro-miao-killorder" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="micro-eureka9001" options="-parameters" />
+      <module name="micro-miao-kill" options="-parameters" />
+      <module name="micro-miao-killorder" options="-parameters" />
+    </option>
+  </component>
+</project>

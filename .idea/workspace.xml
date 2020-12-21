@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="06ed07ea-b547-4db5-8cfd-c7c6bdbfb26f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wozhendefule/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wozhendefule/.idea/wozhendefule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wozhendefule/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wozhendefule/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wozhendefule/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wozhendefule/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\MV\maven3.2\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../MV/maven3.2" />
+        <option name="userSettingsFile" value="F:\MV\maven3.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1imCrCfuynHuykpS0GVQvCTSQZZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\idearp\Projrct916\micro-shop" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootApp">
+    <configuration name="KillGoodApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="micro-miao-kill" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.KillGoodApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="micro-miao-killorder" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.KillOrderApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06ed07ea-b547-4db5-8cfd-c7c6bdbfb26f" name="Default Changelist" comment="" />
+      <created>1602503576629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602503576629</updated>
+      <workItem from="1602503578634" duration="1722000" />
+      <workItem from="1602550158617" duration="8402000" />
+      <workItem from="1608117133937" duration="658000" />
+      <workItem from="1608555881430" duration="3994000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="880" y="97" key="#Project_Structure" timestamp="1602561640184">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="880" y="97" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1602561640184" />
+    <state x="1244" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1602559549508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1244" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602559549508" />
+    <state x="1112" y="450" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1602557195660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1112" y="450" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602557195660" />
+    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602556738010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602556738010" />
+    <state x="739" y="277" key="FileChooserDialogImpl" timestamp="1608562561705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608562561705" />
+    <state width="901" height="279" key="GridCell.Tab.0.bottom" timestamp="1602561167449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="901" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602561167449" />
+    <state width="901" height="279" key="GridCell.Tab.0.center" timestamp="1602561167449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="901" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602561167449" />
+    <state width="901" height="279" key="GridCell.Tab.0.left" timestamp="1602561167449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="901" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602561167449" />
+    <state width="901" height="279" key="GridCell.Tab.0.right" timestamp="1602561167449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="901" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602561167449" />
+    <state x="490" y="177" key="Maven.ArtifactSearchDialog" timestamp="1602560336220">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="177" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602560336220" />
+    <state x="349" y="141" key="SettingsEditor" timestamp="1608562542943">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="349" y="141" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608562542943" />
+    <state x="344" y="159" key="new project wizard" timestamp="1602561233459">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="344" y="159" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1602561233459" />
+  </component>
+</project>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="720a7083-580b-4ac8-a05c-c435f522fad2" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/myjava/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\myjava\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hTxZZTzz0YZ4ECcFjsf4ECR3m5" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../micro-hystrix-dashboard9011" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="spring" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaWorkspace" />
+    </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 11 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 11 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="micro-consumer-hystrix7003" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConsumerApp (1)">
+    <configuration name="ConfigApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="micro-config1122" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ConfigApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerApp (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="micro-consumer-hystrix7003" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ConsumerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="micro-consumer7001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ConsumerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="micro-consumer-hystrix7003" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ConsumerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="micro-consumer-fegin7002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ConsumerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashBoardApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="micro-hystrix-dashboard9011" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.DashBoardApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="micro-eureka9001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.EurekaApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DashBoardApp" />
+      <item itemvalue="Spring Boot.ConsumerApp" />
+      <item itemvalue="Spring Boot.ConfigApp" />
+      <item itemvalue="Spring Boot.EurekaApp" />
+      <item itemvalue="Spring Boot.ConsumerApp (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ConsumerApp (1)" />
+        <item itemvalue="Spring Boot.EurekaApp" />
+        <item itemvalue="Spring Boot.DashBoardApp" />
+        <item itemvalue="Spring Boot.ConfigApp" />
+        <item itemvalue="Spring Boot.ConsumerApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.23702186" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="未开始" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="720a7083-580b-4ac8-a05c-c435f522fad2" name="默认更改列表" comment="" />
+      <created>1600048939583</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600048939583</updated>
+      <workItem from="1600048941033" duration="3990000" />
+      <workItem from="1600060934789" duration="10743000" />
+      <workItem from="1600072735315" duration="2000" />
+      <workItem from="1600095173602" duration="2130000" />
+      <workItem from="1600135493601" duration="4141000" />
+      <workItem from="1600148471655" duration="5283000" />
+      <workItem from="1600154781934" duration="7000" />
+      <workItem from="1600155154527" duration="1333000" />
+      <workItem from="1600160300845" duration="307000" />
+      <workItem from="1600183954285" duration="1324000" />
+      <workItem from="1600218758133" duration="15000" />
+      <workItem from="1600218892438" duration="1004000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="296" y="49" key="#ProviderApp" timestamp="1600069235914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="296" y="49" key="#ProviderApp/0.0.1536.824@0.0.1536.824" timestamp="1600069235914" />
+    <state x="549" y="102" key="FileChooserDialogImpl" timestamp="1600152683504">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="102" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600152683504" />
+    <state x="361" y="71" key="GrepConsoleSettings" timestamp="1600064748880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="GrepConsoleSettings/0.0.1536.824@0.0.1536.824" timestamp="1600064748880" />
+    <state width="1116" height="172" key="GridCell.Tab.0.bottom" timestamp="1600160607775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1116" height="172" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600160607775" />
+    <state width="1116" height="172" key="GridCell.Tab.0.center" timestamp="1600160607775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1116" height="172" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600160607775" />
+    <state width="1116" height="172" key="GridCell.Tab.0.left" timestamp="1600160607775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1116" height="172" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600160607775" />
+    <state width="1116" height="172" key="GridCell.Tab.0.right" timestamp="1600160607775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1116" height="172" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600160607775" />
+    <state width="1116" height="172" key="GridCell.Tab.1.bottom" timestamp="1600160607775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1116" height="172" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600160607775" />
+    <state width="1116" height="172" key="GridCell.Tab.1.center" timestamp="1600160607775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1116" height="172" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600160607775" />
+    <state width="1116" height="172" key="GridCell.Tab.1.left" timestamp="1600160607775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1116" height="172" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600160607775" />
+    <state width="1116" height="172" key="GridCell.Tab.1.right" timestamp="1600160607775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1116" height="172" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600160607775" />
+    <state width="1255" height="302" key="GridCell.Tab.2.bottom" timestamp="1600067901589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1255" height="302" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600067901589" />
+    <state width="1255" height="302" key="GridCell.Tab.2.center" timestamp="1600067901589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1255" height="302" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1600067901589" />
+    <state width="1255" height="302" key="GridCell.Tab.2.left" timestamp="1600067901589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1255" height="302" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1600067901589" />
+    <state width="1255" height="302" key="GridCell.Tab.2.right" timestamp="1600067901589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1255" height="302" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1600067901589" />
+    <state x="423" y="116" key="NewModule_or_Project.wizard" timestamp="1600152684916">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="423" y="116" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1600152684916" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1600184630329">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600184630329" />
+    <state x="178" y="107" key="new project wizard" timestamp="1600049622297">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1600049622297" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600068890278">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600068890278" />
+  </component>
+</project>

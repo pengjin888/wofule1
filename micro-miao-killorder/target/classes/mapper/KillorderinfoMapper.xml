@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.KillorderinfoMapper" >
+  <resultMap id="BaseResultMap" type="com.model.Killorderinfo" >
+    <id column="killorderid" property="killorderid" jdbcType="INTEGER" />
+    <result column="userid" property="userid" jdbcType="INTEGER" />
+    <result column="goodsid" property="goodsid" jdbcType="INTEGER" />
+    <result column="orderid" property="orderid" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    killorderid, userid, goodsid, orderid
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from killorderinfo
+    where killorderid = #{killorderid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from killorderinfo
+    where killorderid = #{killorderid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.model.Killorderinfo" >
+    insert into killorderinfo (killorderid, userid, goodsid, 
+      orderid)
+    values (#{killorderid,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, #{goodsid,jdbcType=INTEGER}, 
+      #{orderid,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.model.Killorderinfo" >
+    insert into killorderinfo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="killorderid != null" >
+        killorderid,
+      </if>
+      <if test="userid != null" >
+        userid,
+      </if>
+      <if test="goodsid != null" >
+        goodsid,
+      </if>
+      <if test="orderid != null" >
+        orderid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="killorderid != null" >
+        #{killorderid,jdbcType=INTEGER},
+      </if>
+      <if test="userid != null" >
+        #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="goodsid != null" >
+        #{goodsid,jdbcType=INTEGER},
+      </if>
+      <if test="orderid != null" >
+        #{orderid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.model.Killorderinfo" >
+    update killorderinfo
+    <set >
+      <if test="userid != null" >
+        userid = #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="goodsid != null" >
+        goodsid = #{goodsid,jdbcType=INTEGER},
+      </if>
+      <if test="orderid != null" >
+        orderid = #{orderid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where killorderid = #{killorderid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.model.Killorderinfo" >
+    update killorderinfo
+    set userid = #{userid,jdbcType=INTEGER},
+      goodsid = #{goodsid,jdbcType=INTEGER},
+      orderid = #{orderid,jdbcType=INTEGER}
+    where killorderid = #{killorderid,jdbcType=INTEGER}
+  </update>
+</mapper>
